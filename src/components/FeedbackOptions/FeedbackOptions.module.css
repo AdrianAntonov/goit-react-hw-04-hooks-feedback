@@ -1,0 +1,15 @@
+.button {
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid grey;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
