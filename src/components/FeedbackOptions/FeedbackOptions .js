@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import styles from './FeedbackOptions.module.css';
+import PropTypes from 'prop-types';
 
 export class FeedbackOptions extends Component {
+  static propTypes = {
+    options: PropTypes.array,
+    onLeaveFeedback: PropTypes.func,
+  };
+
   render() {
     return (
       <div>

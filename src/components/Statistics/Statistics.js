@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class Statistics extends Component {
+  static propTypes = {
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number,
+    positivePercentage: PropTypes.string,
+  };
   render() {
     const { good, neutral, bad, total, positivePercentage } = this.props;
 
