@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './FeedbackOptions.module.css';
 import PropTypes from 'prop-types';
+import styles from './FeedbackOptions.module.css';
 
 export class FeedbackOptions extends Component {
   static propTypes = {
@@ -15,7 +15,7 @@ export class FeedbackOptions extends Component {
           <button
             className={styles.button}
             key={item.id}
-            onClick={() => this.props.onLeaveFeedback(item.id)}
+            onClick={() => this.props.onLeaveFeedback(item.name)}
           >
             {item.name}
           </button>

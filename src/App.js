@@ -13,25 +13,9 @@ class App extends Component {
   };
 
   count = arg => {
-    switch (arg) {
-      case 1:
-        this.setState(prevState => ({
-          good: prevState.good + 1,
-        }));
-        break;
-      case 2:
-        this.setState(prevState => ({
-          neutral: prevState.neutral + 1,
-        }));
-        break;
-      case 3:
-        this.setState(prevState => ({
-          bad: prevState.bad + 1,
-        }));
-        break;
-      default:
-        alert('Missing option. Try again!');
-    }
+    this.setState(prevState => ({
+      [arg]: prevState[arg] + 1,
+    }));
   };
 
   countTotalFeedback = () => {
